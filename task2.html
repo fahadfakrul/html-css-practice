@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback from story telling contest</title>
+    <link rel="stylesheet" href="styles/blog.css">
     <style>
-        label{
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+       input, label{
             display: block;
             margin-bottom: 5px;
         }
+        .form{
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color:blanchedalmond;
+    width: 500px;
+   
+    }
     </style>
 </head>
 <body>
+    <div class="form">
     <h3>Storytelling Contest Feedback Form</h3>
     <form>
         <label for="name" >Name: 
@@ -27,6 +43,16 @@
                 <input type="submit" value="submit">
             </label>
         </fieldset>
+        <fieldset>
+            <legend>Share your opinion</legend>
+            <select name="rating" id="rating" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+            </select>
+        </fieldset>
     </form>
+</div>
 </body>
 </html>
